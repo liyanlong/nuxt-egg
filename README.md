@@ -1,5 +1,7 @@
-nuxt-egg
-=======
+# Nuxt.js with Egg
+	
+> [Egg](https://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+	
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -24,14 +26,19 @@ Egg framework for Nuxt.
 
 - node >= 4.0.0
 - nuxt latest
+
+
 ## Installation
 
 ```bash
 $ npm install nuxt-egg --save
 ```
 
+
+
+
 ## Usage
-** package.json **
+**package.json**
 ```json
 {
   "scripts": {
@@ -45,9 +52,9 @@ $ npm install nuxt-egg --save
 ```
 
 ## Direct Structure
-[egg-framework](https://eggjs.org/zh-cn/basics/structure.html)
+> 点击查看 [egg-framework](https://eggjs.org/zh-cn/basics/structure.html) 目录结构
 
-[nuxt-egg] = egg-framework + nuxt
+**nuxt-egg = egg-framework + nuxt**
 ```
 nuxt-egg-project
 ├── .nuxt
@@ -116,3 +123,15 @@ module.exports = {
   srcDir: path.join(process.cwd(), './client'),
 };
 ```
+
+## Documentation
+
+- [Egg](https://eggjs.org/)
+- [Nuxt.js](https://nuxtjs.org/guide/)
+- [Vue.js](http://vuejs.org/guide/)
+
+## Licenses
+
+- [Egg license](https://github.com/eggjs/egg/blob/master/LICENSE)
+- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
+- [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
