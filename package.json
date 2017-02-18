@@ -6,13 +6,13 @@
     "egg", "egg-framework", "nuxt"
   ],
   "files": [
-    "index.js",
-    "app.js",
-    "agent.js",
     "lib/",
     "app/",
     "config/",
-    "nuxt.config.js"
+    "index.js",
+    "app.js",
+    "nuxt.config.js",
+    "README.md"
   ],
   "dependencies": {
     "egg": "^0.12.0",
