@@ -1,8 +1,7 @@
 'use strict';
 
 module.exports = {
-  view: {
+  nuxt: {
     enable: true,
-    package: 'egg-view-nunjucks',
   },
 };

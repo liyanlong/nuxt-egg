@@ -4,5 +4,7 @@ node_modules/
 coverage/
 .idea/
 run/
+refs/
 .DS_Store
 *.swp
+.nuxt/

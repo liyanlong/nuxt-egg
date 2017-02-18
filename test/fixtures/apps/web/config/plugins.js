@@ -1,3 +1,0 @@
-exports.nuxt = {
-  enable: true
-}

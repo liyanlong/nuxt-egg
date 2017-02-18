@@ -1,9 +1,10 @@
 'use strict';
+const path = require('path');
 
-exports.core = {
-  name: 'nuxt-egg',
-};
+module.exports = appInfo => {
+  exports.keys = appInfo.name + '#nuxt-egg';
+  exports.core = 'nuxt-egg';
+  exports.nuxt = require('../nuxt.config.js');
 
-exports.nuxt = {
-  enable: true,
+  return exports;
 };

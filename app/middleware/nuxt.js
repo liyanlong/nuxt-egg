@@ -1,7 +1,6 @@
 'use strict';
 
 const Nuxt = require('nuxt');
-
 module.exports = (_, app) => {
   let config = app.config.nuxt;
   try {
@@ -13,7 +12,9 @@ module.exports = (_, app) => {
     process.exit(1);
   }
   config = config || {};
-  config.dev = !(app.config.env === 'prod' || process.env.NODE_ENV === 'production');
+
+  // https://eggjs.org/zh-cn/basics/env.html
+  config.dev = app.config.env === 'local';
   const nuxt = new Nuxt(config);
 
   // Build only in dev mode
@@ -33,10 +34,6 @@ module.exports = (_, app) => {
       return;
     }
 
-    // this.body alias koa response.body
-    // if (this.body !== '<h1>404 Not Found</h1>') {
-    //   return;
-    // }
     this.status = 200;
     yield nuxt.render(this.req, this.res);
   };

@@ -9,15 +9,19 @@ describe('test/nuxt-egg.test.js', () => {
   describe('render', () => {
     let app;
     before(() => {
-      app = utils.createApp('apps/web');
+      app = utils.createApp('web');
       return app.ready();
     });
 
-    it('render', () => {
+    it('render', done => {
       return request(app.callback())
-        .get('/')
+        .get('/about')
         .expect(200)
-        .expect('world');
+        .end(function(err, res) {
+          if (err) throw err;
+          assert(!!res.text.indexOf('about'), true);
+          done();
+        });
     });
     after(() => app.close());
   });

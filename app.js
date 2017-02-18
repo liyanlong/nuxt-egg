@@ -1,5 +1,5 @@
 'use strict';
 module.exports = app => {
-  app.config.coreMiddleware.splice(0, 0, 'nuxt');
+  app.config.coreMiddleware.push('nuxt');
 };
 
