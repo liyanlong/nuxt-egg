@@ -9,11 +9,12 @@
     "index.js",
     "app.js",
     "agent.js",
-    "lib",
-    "config"
+    "lib/",
+    "app/",
+    "config/"
   ],
   "dependencies": {
-    "egg": "^0.10.0",
+    "egg": "^0.12.0",
     "nuxt": "latest",
     "egg-view-nunjucks": "^1.0.0"
   },
