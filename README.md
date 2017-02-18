@@ -9,7 +9,7 @@ nuxt-egg
 
 [npm-image]: https://img.shields.io/npm/v/nuxt-egg.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/nuxt-egg
-[travis-image]: https://img.shields.io/travis/liyanlong/nuxt-egg.svg?style=flat-square
+[travis-image]: https://api.travis-ci.org/liyanlong/nuxt-egg.svg?branch=master
 [travis-url]: https://travis-ci.org/liyanlong/nuxt-egg
 [codecov-image]: https://codecov.io/github/liyanlong/nuxt-egg/coverage.svg?branch=master
 [codecov-url]: https://codecov.io/github/liyanlong/nuxt-egg?branch=master
