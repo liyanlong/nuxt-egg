@@ -20,12 +20,10 @@
 [download-image]: https://img.shields.io/npm/dm/nuxt-egg.svg?style=flat-square
 [download-url]: https://npmjs.org/package/nuxt-egg
 
-Egg framework for Nuxt.
-
 ## Requirement
 
-- node >= 4.0.0
-- nuxt latest
+- `node >= 4.0.0`
+- `nuxt latest`
 
 
 ## Installation
@@ -33,8 +31,6 @@ Egg framework for Nuxt.
 ```bash
 $ npm install nuxt-egg --save
 ```
-
-
 
 
 ## Usage
@@ -54,7 +50,6 @@ $ npm install nuxt-egg --save
 ## Direct Structure
 > 点击查看 [egg-framework](https://eggjs.org/zh-cn/basics/structure.html) 目录结构
 
-**nuxt-egg = egg-framework + nuxt**
 ```
 nuxt-egg-project
 ├── .nuxt
