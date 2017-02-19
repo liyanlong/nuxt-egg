@@ -1,7 +1,7 @@
 
 <p align="center">
-    <a href="https://github.com/nuxt/nuxt.js">
-        <img width="100" src="https://camo.githubusercontent.com/4aa5532ee9baf623c95b901372002dfa4e97ff01/687474703a2f2f696d6775722e636f6d2f56344c746f49492e706e67">
+    <a href="https://github.com/nuxt/nuxt.js" style="text-decoration:none;">
+    <img width="100" src="https://camo.githubusercontent.com/4aa5532ee9baf623c95b901372002dfa4e97ff01/687474703a2f2f696d6775722e636f6d2f56344c746f49492e706e67">
     </a>
     <a href="https://github.com/eggjs/egg/">
         <img width="250" src="https://raw.githubusercontent.com/eggjs/egg/master/docs/assets/egg-logo.png">
