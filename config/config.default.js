@@ -6,5 +6,9 @@ module.exports = appInfo => {
   exports.core = 'nuxt-egg';
   exports.nuxt = require('../nuxt.config.js');
 
+  // allow website request throw up crsf check
+  exports.security = {
+    ignoreJson: true,
+  };
   return exports;
 };

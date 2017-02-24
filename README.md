@@ -114,9 +114,9 @@ nuxt-egg-project
 ##  Nuxt Config
 **config.default.js**
 ```js
-  exports.nuxt = require('../nuxt.config.js');
-  
+exports.nuxt = require('../nuxt.config.js');
 ```
+
 **nuxt.config.js**
 ```js
 'use strict';
