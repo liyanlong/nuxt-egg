@@ -1,9 +1,9 @@
 
 <p align="center">
-    <a href="https://github.com/nuxt/nuxt.js" style="text-decoration:none;">
+    <a href="https://github.com/nuxt/nuxt.js" target="_blank">
     <img width="100" src="https://camo.githubusercontent.com/4aa5532ee9baf623c95b901372002dfa4e97ff01/687474703a2f2f696d6775722e636f6d2f56344c746f49492e706e67">
     </a>
-    <a href="https://github.com/eggjs/egg/">
+    <a href="https://github.com/eggjs/egg/" target="_blank">
         <img width="250" src="https://raw.githubusercontent.com/eggjs/egg/master/docs/assets/egg-logo.png">
     </a>
 </p>
@@ -11,7 +11,7 @@
 # Nuxt.js with Egg
 	
 > [Egg](https://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = :zap:
-	
+
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -33,15 +33,13 @@
 ## Requirement
 
 - `node >= 4.0.0`
-- `nuxt latest`
-
 
 ## Installation
 
 ```bash
+$ npm init
 $ npm install nuxt-egg --save
 ```
-
 
 ## Usage
 **package.json**
@@ -49,6 +47,7 @@ $ npm install nuxt-egg --save
 {
   "scripts": {
     "dev": "egg-bin dev",
+    "build": "nuxt build",
     "start": "NODE_ENV=production egg-bin dev"
   },
   "egg": {
@@ -128,6 +127,11 @@ module.exports = {
   srcDir: path.join(process.cwd(), './client'),
 };
 ```
+
+## Demo
+
+- [nuxt-egg-example](https://github.com/liyanlong/nuxt-egg-example) **Comming soon!**
+
 
 ## Documentation
 
