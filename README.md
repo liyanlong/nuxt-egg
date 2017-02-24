@@ -18,6 +18,7 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
 [![npm download][download-image]][download-url]
+[![lincense image][lincense-image]][lincense-url]
 
 [npm-image]: https://img.shields.io/npm/v/nuxt-egg.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/nuxt-egg
@@ -29,6 +30,8 @@
 [david-url]: https://david-dm.org/liyanlong/nuxt-egg
 [download-image]: https://img.shields.io/npm/dm/nuxt-egg.svg?style=flat-square
 [download-url]: https://npmjs.org/package/nuxt-egg
+[lincense-image]: https://img.shields.io/npm/l/nuxt-egg.svg
+[lincense-url]: https://github.com/liyanlong/nuxt-egg/blob/master/LICENSE
 
 ## Requirement
 
