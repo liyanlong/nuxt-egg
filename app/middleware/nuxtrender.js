@@ -1,19 +1,21 @@
 'use strict';
 
-const { checkIfIgnore } = require('../../lib/utils.js');
+const { loadNuxtConfig } = require('../../lib/utils.js');
+const Nuxt = require('nuxt');
 
 module.exports = (options, app) => {
+
+  const nuxt = new Nuxt(loadNuxtConfig(app.config));
   return function* (next) {
+
     yield next;
-    // ignore match path
-    if (checkIfIgnore(app.config.nuxt, this.path)) {
-      return;
-    }
-    // ignore status is not 404
+
+    // ignore status if not 404
     if (this.status !== 404 || this.method !== 'GET') {
       return;
     }
+
     this.status = 200;
-    yield this.app.nuxt.render(this.req, this.res);
+    yield nuxt.render(this.req, this.res);
   };
 };
