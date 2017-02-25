@@ -14,7 +14,7 @@ describe('test/nuxt-egg.test.js', () => {
     });
 
     it('nuxt render', done => {
-      return request(app.callback())
+      request(app.callback())
         .get('/about')
         .expect(200)
         .end(function(err, res) {
