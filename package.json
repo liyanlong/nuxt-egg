@@ -11,7 +11,10 @@
     "config/",
     "index.js",
     "app.js",
+    "agent.js",
     "nuxt.config.js",
+    "LICENSE",
+    "pacakge.json",
     "README.md"
   ],
   "dependencies": {
@@ -36,9 +39,8 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && npm run build && npm run test-local",
+    "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
-    "build": "nuxt build",
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov"

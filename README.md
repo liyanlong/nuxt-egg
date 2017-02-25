@@ -8,10 +8,9 @@
     </a>
 </p>
 
-# Nuxt.js with Egg
-	
-> [Egg](https://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+# Egg-Nuxt
 
+> [Egg](https://eggjs.org/) + [Nuxt.js](https://nuxtjs.org) = 🔥
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -35,12 +34,11 @@
 
 ## Requirement
 
-- `node >= 4.0.0`
+- `node >= 6.0.0`
 
 ## Installation
 
 ```bash
-$ npm init
 $ npm install nuxt-egg --save
 ```
 
@@ -65,7 +63,7 @@ $ npm install nuxt-egg --save
 ```
 nuxt-egg-project
 ├── .nuxt
-├── client
+├── resources
 |   ├── pages
 │   ├── assets
 │   |   └── css
@@ -111,27 +109,13 @@ nuxt-egg-project
     |   └── response_time.test.js
     └── controller
         └── home.test.js
-└── nuxt.config.js
 ```
+##  Nuxt.js Changes
 
-##  Nuxt Config
-**config.default.js**
-```js
-exports.nuxt = require('../nuxt.config.js');
-```
+- The Nuxt config file is now in  `config.[dev].js`, `dev` allow set `default`, `unittest`, `local`, `prod`
+- The Nuxt project directory is `resources` (default)
 
-**nuxt.config.js**
-```js
-'use strict';
-const path = require('path');
-
-module.exports = {
-  rootDir: process.cwd(),
-  srcDir: path.join(process.cwd(), './client'),
-};
-```
-
-## Demo
+## Live Demo
 
 - [nuxt-egg-example](https://github.com/liyanlong/nuxt-egg-example) **Comming soon!**
 
