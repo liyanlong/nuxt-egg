@@ -115,6 +115,14 @@ nuxt-egg-project
 - The Nuxt config file is now in  `config.[dev].js`, `dev` allow set `default`, `unittest`, `local`, `prod`
 - The Nuxt project directory is `resources` (default)
 
+### config.default.js
+```
+const path = require('path);
+exports.nuxt = {
+  srcDir: path.join(__dirname, '../resources'),
+  rootDir: path.dirname(__dirname),
+}
+```
 ## Live Demo
 
 - [nuxt-egg-example](https://github.com/liyanlong/nuxt-egg-example) **Comming soon!**
@@ -122,12 +130,12 @@ nuxt-egg-project
 
 ## Documentation
 
-- [Egg](https://eggjs.org/)
+- [Egg.js](https://eggjs.org/)
 - [Nuxt.js](https://nuxtjs.org/guide/)
 - [Vue.js](http://vuejs.org/guide/)
 
 ## Licenses
 
-- [Egg license](https://github.com/eggjs/egg/blob/master/LICENSE)
+- [EggJS license](https://github.com/eggjs/egg/blob/master/LICENSE)
 - [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
 - [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
