@@ -39,7 +39,7 @@
 ## Installation
 
 ```bash
-$ npm install nuxt-egg --save
+$ vue init nuxt-egg/starter my_project (Comming Soon)!
 ```
 
 ## Usage
@@ -123,9 +123,10 @@ exports.nuxt = {
   rootDir: path.dirname(__dirname),
 }
 ```
+
 ## Live Demo
 
-- [nuxt-egg-example](https://github.com/liyanlong/nuxt-egg-example) **Comming soon!**
+- [nuxt-egg-examples](https://github.com/liyanlong/nuxt-egg-examples) **Comming soon!**
 
 
 ## Documentation
