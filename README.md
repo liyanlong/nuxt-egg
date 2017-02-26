@@ -126,7 +126,8 @@ exports.nuxt = {
 
 ## Live Demo
 
-- [nuxt-egg-examples](https://github.com/liyanlong/nuxt-egg-examples) **Comming soon!**
+- [nuxt-egg-examples](https://github.com/liyanlong/nuxt-egg-examples)
+- [http://nuxt-egg.liylblog.com/](http://nuxt-egg.liylblog.com/)
 
 ## Documentation
 
