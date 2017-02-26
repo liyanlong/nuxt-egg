@@ -39,7 +39,7 @@
 ## Installation
 
 ```bash
-$ vue init nuxt-egg/starter my_project (Comming Soon)!
+$ vue init nuxt-egg/starter my_project
 ```
 
 ## Usage
@@ -127,7 +127,6 @@ exports.nuxt = {
 ## Live Demo
 
 - [nuxt-egg-examples](https://github.com/liyanlong/nuxt-egg-examples) **Comming soon!**
-
 
 ## Documentation
 

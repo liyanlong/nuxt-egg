@@ -15,9 +15,8 @@ module.exports = appInfo => {
   // allow website request throw up crsf check
   exports.security = {
     ignoreJson: true,
-    /** ignore _nuxt nosniff  */
     nosniff: {
-      match: /_nuxt/,
+      enable: false,
     },
   };
 

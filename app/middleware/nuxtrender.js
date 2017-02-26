@@ -16,6 +16,13 @@ module.exports = (options, app) => {
     }
 
     this.status = 200;
+    const path = this.path;
+    if (/\.js$/.test(path)) {
+      this.set('Content-Type', 'application/javascript');
+    }
+    if (/\.css/.test(path)) {
+      this.set('Content-Type', 'text/css');
+    }
     yield nuxt.render(this.req, this.res);
   };
 };
