@@ -1,13 +1,8 @@
 'use strict';
 
-const { loadNuxtConfig } = require('../../lib/utils.js');
-const Nuxt = require('nuxt');
-
 module.exports = (options, app) => {
 
-  const nuxt = new Nuxt(loadNuxtConfig(app.config));
   return function* (next) {
-
     yield next;
 
     // ignore status if not 404
@@ -23,6 +18,6 @@ module.exports = (options, app) => {
     if (/\.css/.test(path)) {
       this.set('Content-Type', 'text/css');
     }
-    yield nuxt.render(this.req, this.res);
+    yield this.app.nuxt.render(this.req, this.res);
   };
 };

@@ -1,6 +1,6 @@
 {
   "name": "nuxt-egg",
-  "version": "0.1.5",
+  "version": "0.1.5-rc.1",
   "description": "egg framework for nuxt",
   "keywords": [
     "egg", "egg-framework", "nuxt", "nuxt-egg"

@@ -15,9 +15,6 @@ module.exports = appInfo => {
   // allow website request throw up crsf check
   exports.security = {
     ignoreJson: true,
-    nosniff: {
-      enable: false,
-    },
   };
 
   return exports;
