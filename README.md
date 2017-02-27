@@ -36,29 +36,22 @@
 
 - `node >= 6.0.0`
 
-## Installation
+## Quick Usage
 
 ```bash
+$ npm install -g vue-cli
 $ vue init nuxt-egg/starter my_project
-```
+or 
+$ npm install -g egg-init
+$ egg-init --package=egg-boilerplate-nuxt my_project
 
-## Usage
-**package.json**
-```json
-{
-  "scripts": {
-    "dev": "egg-bin dev",
-    "build": "nuxt build",
-    "start": "NODE_ENV=production egg-bin dev"
-  },
-  "egg": {
-    "framework": "nuxt-egg"
-  }
-}
+$ cd my_prject
+$ npm install
+$ npm run dev
 ```
 
 ## Direct Structure
-> 点击查看 [egg-framework](https://eggjs.org/zh-cn/basics/structure.html) 目录结构
+> Look at [egg-framework](https://eggjs.org/zh-cn/basics/structure.html)
 
 ```
 nuxt-egg-project
@@ -74,36 +67,36 @@ nuxt-egg-project
 │   ├── plugins
 │   ├── components
 ├── package.json
-├── app.js (可选)
-├── agent.js (可选)
+├── app.js (option)
+├── agent.js (option)
 ├── app
 |   ├── router.js
 │   ├── controller
 │   |   └── home.js
-│   ├── service (可选)
+│   ├── service (option)
 │   |   └── user.js
-│   ├── middleware (可选)
+│   ├── middleware (option)
 │   |   └── response_time.js
-│   ├── schedule (可选)
+│   ├── schedule (option)
 │   |   └── my_task.js
-│   ├── public (可选)
+│   ├── public (option)
 │   |   └── reset.css
-│   ├── view (可选)
+│   ├── view (option)
 │   |   └── home.tpl
-│   └── extend (可选)
-│       ├── helper.js (可选)
-│       ├── request.js (可选)
-│       ├── response.js (可选)
-│       ├── context.js (可选)
-│       ├── application.js (可选)
-│       └── agent.js (可选)
+│   └── extend (option)
+│       ├── helper.js (option)
+│       ├── request.js (option)
+│       ├── response.js (option)
+│       ├── context.js (option)
+│       ├── application.js (option)
+│       └── agent.js (option)
 ├── config
 |   ├── plugin.js
 |   ├── config.default.js
 │   ├── config.prod.js
-|   ├── config.test.js (可选)
-|   ├── config.local.js (可选)
-|   └── config.unittest.js (可选)
+|   ├── config.test.js (option)
+|   ├── config.local.js (option)
+|   └── config.unittest.js (option)
 └── test
     ├── middleware
     |   └── response_time.test.js
@@ -116,11 +109,23 @@ nuxt-egg-project
 - The Nuxt project directory is `resources` (default)
 
 ### config.default.js
-```
+```javascript
 const path = require('path);
 exports.nuxt = {
   srcDir: path.join(__dirname, '../resources'),
   rootDir: path.dirname(__dirname),
+}
+```
+**Or you can also do this**
+```javascript
+// config/config.default.js
+const path = require('path);
+exports.nuxt = require('./config.nuxt.js');
+
+// config/config.nuxt.js
+module.exports = {
+  srcDir: ''
+  rootDir: ''
 }
 ```
 
@@ -140,3 +145,6 @@ exports.nuxt = {
 - [EggJS license](https://github.com/eggjs/egg/blob/master/LICENSE)
 - [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
 - [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
+
+### Note
+- egg-init doesn't support download image now, so the logo.png will not be open normal.
