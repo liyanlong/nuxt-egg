@@ -109,17 +109,18 @@ nuxt-egg-project
 - The Nuxt project directory is `resources` (default)
 
 ### config.default.js
-```javascript
-const path = require('path);
+
+```js
+const path = require('path');
 exports.nuxt = {
   srcDir: path.join(__dirname, '../resources'),
   rootDir: path.dirname(__dirname),
 }
 ```
 **Or you can also do this**
-```javascript
+
+```js
 // config/config.default.js
-const path = require('path);
 exports.nuxt = require('./config.nuxt.js');
 
 // config/config.nuxt.js
