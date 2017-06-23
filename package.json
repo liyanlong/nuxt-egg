@@ -3,7 +3,10 @@
   "version": "0.1.6",
   "description": "egg framework for nuxt",
   "keywords": [
-    "egg", "egg-framework", "nuxt", "nuxt-egg"
+    "egg",
+    "egg-framework",
+    "nuxt",
+    "nuxt-egg"
   ],
   "files": [
     "lib/",
@@ -18,16 +21,16 @@
     "README.md"
   ],
   "dependencies": {
-    "egg": "^0.12.0",
-    "nuxt": "latest"    
+    "egg": "^1.5.0",
+    "nuxt": "latest"
   },
   "devDependencies": {
-    "egg-bin": "^2.0.2",
-    "egg-mock": "^2.3.1",
+    "egg-bin": "^4.0.4",
+    "egg-mock": "^3.8.0",
     "eslint-config-egg": "^3.2.0",
     "rimraf": "^2.5.4",
     "supertest": "^3.0.0",
-    "eslint": "^3.15.0",    
+    "eslint": "^3.15.0",
     "babel-eslint": "^7.1.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
