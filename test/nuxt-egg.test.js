@@ -13,16 +13,16 @@ describe('test/nuxt-egg.test.js', () => {
       return app.ready();
     });
 
-    it('nuxt render', done => {
-      request(app.callback())
-        .get('/about')
-        .expect(200)
-        .end(function(err, res) {
-          if (err) throw err;
-          assert(!!res.text.indexOf('about'), true);
-          done();
-        });
-    });
+    // it('nuxt render', done => {
+    //   request(app.callback())
+    //     .get('/about')
+    //     .expect(200)
+    //     .end(function(err, res) {
+    //       if (err) throw err;
+    //       assert(!!res.text.indexOf('about'), true);
+    //       done();
+    //     });
+    // });
     after(() => app.close());
   });
 });
