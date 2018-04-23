@@ -1,5 +1,5 @@
 'use strict';
-const Nuxt = require('nuxt');
+const { Nuxt } = require('nuxt');
 const NUXT = Symbol('Application#nuxt');
 const { loadNuxtConfig } = require('../../lib/utils');
 module.exports = {
